@@ -18,42 +18,60 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="46sp" />
+        android:textSize="86sp"
+        android:fontFamily="@font/anton_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/el_centro_image" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/organization_name"
-        android:textSize="26sp" />
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/el_centro_image"
+        android:id="@+id/organization_name" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/street_address"
-        android:textSize="16sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/city_state_zip"
-        android:textSize="16sp" />
+        android:id="@+id/address"
+        android:layout_below="@id/organization_name"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textSize="16sp"
+            android:id="@+id/street_address" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/office_hours"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/address"
+        android:id="@+id/office_hours" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phone_number"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/office_hours"
+        android:id="@+id/phone_number" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/website"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/phone_number"
+        android:id="@+id/website" />
 
 </RelativeLayout>

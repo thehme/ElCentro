@@ -39,39 +39,52 @@
         android:id="@+id/address"
         android:layout_below="@id/organization_name"
         android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/navigation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_navigation_black_18dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/address"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:id="@+id/street_address" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_number"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true" >
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_black_18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/office_hours"
-        android:textSize="16sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/address"
-        android:id="@+id/office_hours" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phone_number"
-        android:textSize="16sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/office_hours"
-        android:id="@+id/phone_number" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/website"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/phone_number"
-        android:id="@+id/website" />
+        android:id="@+id/office_hours" />
+
+    <ImageView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_language_black_18dp"
+        android:layout_below="@id/office_hours" />
 
 </RelativeLayout>

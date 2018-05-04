@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">El Centro</string>
     <string name="organization_name">Catholic Charities</string>
-    <string name="street_address">327 S Broad St</string>
-    <string name="city_state_zip">Trenton, NJ 08608</string>
+    <string name="address">327 S Broad St., Trenton, NJ 08608</string>
     <string name="phone_number">(609) 394&#8211;2056</string>
     <string name="office_hours">M-F 9:00am&#8211;7pm</string>
     <string name="website">https://www.catholiccharitiestrenton.org/locations/el-centro/</string>

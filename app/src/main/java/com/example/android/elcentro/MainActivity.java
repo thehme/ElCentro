@@ -18,26 +18,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        LinearLayout makeCall = findViewById(R.id.phone_number);
-
-        makeCall.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:6093942056"));
-
-                if (ActivityCompat.checkSelfPermission(MainActivity.this,
-                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    return;
-                }
-                startActivity(callIntent);
-            }
-        });
     }
     public void launchWebsite(View view) {
         String url = "https://www.catholiccharitiestrenton.org/locations/el-centro";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
+    }
+    public void dialPhoneNumber(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + "6093942056"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

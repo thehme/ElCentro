@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/el_centro_portrait1"
         android:scaleType="centerCrop"
-        android:alpha="0.5"/>
+        android:alpha="0.4"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="@string/organization_name"
         android:textSize="26sp"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/el_centro_title"
         android:id="@+id/organization_name" />
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:text="@string/address"
             android:textSize="18sp"
+            android:textStyle="bold"
             android:id="@+id/street_address" />
     </LinearLayout>
 
@@ -67,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone_number"
+            android:textStyle="bold"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -75,6 +78,7 @@
         android:layout_height="wrap_content"
         android:text="@string/office_hours"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/phone_number"
         android:id="@+id/office_hours" />

@@ -87,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_language_black_18dp"
-        android:layout_below="@id/office_hours" />
+        android:layout_below="@id/office_hours"
+        android:onClick="launchWebsite" />
 
 </RelativeLayout>

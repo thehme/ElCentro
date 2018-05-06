@@ -13,6 +13,6 @@ Is a Catholic Charities organization, located in Trenton, New Jersey. They offer
 
 # Views
 
-![portrait-screenshot]('./app/src/main/res/drawable/el_centro_portait_app.png')
+![portrait-screenshot]('https://github.com/thehme/ElCentro/app/src/main/res/drawable/el_centro_portait_app.png')
 
-![landscape-screenshot]('./app/src/main/res/drawable/el_centro_landscape_app.png')
+![landscape-screenshot]('https://github.com/thehme/ElCentro/app/src/main/res/drawable/el_centro_landscape_app.png')

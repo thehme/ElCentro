@@ -32,4 +32,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    public void launchMap(View view) {
+        Uri gmmIntentUri = Uri.parse("geo:40.214909, -74.761478?q=327+south+broad+street");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+    }
 }

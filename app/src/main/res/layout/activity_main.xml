@@ -34,11 +34,21 @@
         android:layout_below="@id/el_centro_title"
         android:id="@+id/organization_name" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/organization_name"
+        android:id="@+id/description" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/address"
-        android:layout_below="@id/organization_name"
+        android:layout_below="@id/description"
         android:layout_centerHorizontal="true">
         <ImageView
             android:id="@+id/navigation_icon"

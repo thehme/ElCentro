@@ -19,12 +19,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    /*
+    Method to launch website when user clicks globe icon
+    */
     public void launchWebsite(View view) {
         String url = "https://www.catholiccharitiestrenton.org/locations/el-centro";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
     }
+    /*
+    Method called to open up phone dialer when user clicks the phone icon
+     */
     public void dialPhoneNumber(View view) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + "6093942056"));
@@ -32,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    /*
+    Method called to launch Google Maps to get directions to location when user clicks navigation icon
+     */
     public void launchMap(View view) {
         Uri gmmIntentUri = Uri.parse("geo:40.214909, -74.761478?q=327+south+broad+street");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);

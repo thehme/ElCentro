@@ -10,3 +10,9 @@ Is a Catholic Charities organization, located in Trenton, New Jersey. They offer
 - Intents added to access navigation, phone, and website by clicking icons in app.
 - Google font downloaded and used in app.
 - Google icons used.
+
+# Views
+
+![portrait-screenshot]('./app/src/main/res/drawable/el_centro_portait_app.png')
+
+![landscape-screenshot]('./app/src/main/res/drawable/el_centro_landscape_app.png')
